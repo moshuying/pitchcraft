@@ -1,0 +1,20 @@
+{
+  "name": "pitchcraft",
+  "owner": {
+    "name": "jiujiangliu",
+    "email": ""
+  },
+  "metadata": {
+    "description": "结构化说服框架 · 让领导理解你的价值、相信你的判断",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "pitchcraft",
+      "source": "./",
+      "description": "五段式说服框架：立项汇报 / 阶段汇报 / 结项总结 / 路演 / 方案推销。AI 主动追问材料与听众背景，按结构生成初稿。",
+      "category": "workflow",
+      "tags": ["汇报", "说服", "presentation", "pitch", "communication"]
+    }
+  ]
+}

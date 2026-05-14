@@ -1,0 +1,16 @@
+{
+  "name": "pitchcraft",
+  "description": "结构化说服框架 · 让领导理解你的价值、相信你的判断",
+  "version": "1.0.0",
+  "author": {
+    "name": "jiujiangliu",
+    "url": "https://github.com/moshuying"
+  },
+  "commands": [
+    "./commands/pitchcraft.md"
+  ],
+  "homepage": "https://github.com/moshuying/pitchcraft",
+  "repository": "https://github.com/moshuying/pitchcraft",
+  "license": "Apache-2.0",
+  "keywords": ["pitch", "说服", "汇报", "presentation", "communication"]
+}
