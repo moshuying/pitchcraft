@@ -63,9 +63,15 @@ Hook（钩子）→ Context（背景）→ Proposal（方案）→ Evidence（�
 /plugin install pitchcraft
 ```
 
-重启 Claude Code，然后在对话中输入触发词即可使用。
+或者直接告诉你的 Agent：
 
-### Cursor / Codex / 其他 AI 工具
+```
+Install pitchcraft for me: https://github.com/moshuying/pitchcraft
+```
+
+重启后输入触发词即可。
+
+### Cursor / Codex / 其他 AI
 
 | 工具 | 方式 |
 |---|---|
