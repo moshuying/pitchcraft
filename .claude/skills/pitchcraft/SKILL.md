@@ -1,366 +1,365 @@
 ---
 name: pitchcraft
-description: 结构化说服式汇报撰写。帮助项目负责人、技术Leader、PM 在有限时间内向特定对象做立项汇报/阶段汇报/结项总结/路演/方案推销。核心是一套通用的说服框架，每种汇报类型是它的一个实例。AI 主动追问材料和听众背景，初稿有依据。
+description: Structured persuasion for executive briefings. Helps tech leads, PMs, and founders with project kickoffs, status updates, wrap-ups, investor pitches, and solution selling. One reusable framework; each scenario is an instance. AI probes for materials and audience context before drafting.
 ---
 
-# 说服式汇报 · 工作流
+**Languages:** English (this file) · 简体中文 → `SKILL.zh-CN.md`
 
-## 本质
+# Persuasive briefings · Workflow
 
-这不是写报告，是**说服**。无论哪种场景，你都在做同一件事：
+## Essence
 
-> 在有限时间内，让特定对象理解背景、相信你的判断、给出你需要的支持。
+This is not report writing—it is **persuasion**. In every scenario you do the same thing:
 
-## 目标用户与场景
+> In limited time, help a specific audience understand context, trust your judgment, and provide the support you need.
 
-| 角色 | 场景 | 说服对象 |
+## Users & scenarios
+
+| Role | Scenarios | Audience |
 |---|---|---|
-| 项目负责人 / 技术 Leader | 立项汇报、里程碑复盘、结项汇报 | 业务线领导、CTO、PMO |
-| PM / 产品负责人 | 季度 review、年度总结、需求评审 | 业务线总监、VP |
-| 创业者 / 业务负责人 | 路演 | 投资人、合作伙伴 |
-| 售前 / 解决方案 | 方案推销 | 客户决策层、技术评委 |
-
----
-
-## 核心能力：五段式说服框架
-
-所有汇报类型的底层结构一致，区别在于每个段落的侧重点和详略不同。
-
-```
-第一段 · Hook（钩子）
-  → 为什么对方要听下去？
-  → 机会 / 痛点 / 紧迫性
-
-第二段 · Context（背景）
-  → 当前是什么情况？
-  → 我们做了什么、有什么
-
-第三段 · Proposal（方案）
-  → 具体要做什么 / 做了什么？
-  → 范围、路径、节奏
-
-第四段 · Evidence（证据）
-  → 为什么我们能做成 / 做成了？
-  → 数据、壁垒、团队、案例
-
-第五段 · Ask（请求）
-  → 需要对方给什么？
-  → 决策 / 资源 / 合作 / 投资
-```
+| Tech lead / engineering manager | Kickoff, milestone review, wrap-up | Business leaders, CTO, PMO |
+| PM / product lead | Quarterly review, annual summary, requirements review | Director, VP |
+| Founder / business owner | Investor pitch | Investors, partners |
+| Pre-sales / solutions | Solution selling | Customer execs, technical evaluators |
 
 ---
 
-## 汇报类型与模板
+## Core: 5-part persuasion framework
 
-每种类型是五段式框架的一个实例，段落侧重不同。
+All briefing types share one backbone; section emphasis differs.
 
-### 立项汇报
+```
+Part 1 · Hook
+  → Why should they keep listening?
+  → Opportunity / pain / urgency
 
-**说服目标**：让决策层批准启动，给你资源和人。
+Part 2 · Context
+  → What is the situation?
+  → What we have done and what we have
 
-| 段落 | 模板章节 | 侧重 |
+Part 3 · Proposal
+  → What we will do / did?
+  → Scope, path, pace
+
+Part 4 · Evidence
+  → Why we can succeed / succeeded?
+  → Data, moat, team, cases
+
+Part 5 · Ask
+  → What do we need from them?
+  → Decision / resources / partnership / investment
+```
+
+---
+
+## Briefing types & templates
+
+Each type is an instance of the 5-part framework.
+
+### Project kickoff
+
+**Goal:** Get leadership to approve start and allocate people and budget.
+
+| Part | Section | Focus |
 |---|---|---|
-| Hook | 背景与机会 | 市场机会 / 业务痛点 / 竞品动态 / 为什么现在做 |
-| Context | 我们有什么 | 团队 / 技术 / 数据 / 已有积累 |
-| Proposal | 目标与范围 | 做什么、不做什么、预期里程碑 |
-| Evidence | 为什么是我们 | 独特优势、与竞品的核心差异、壁垒 |
-| Ask | 资源与风险 | 需要什么支持、最大风险及应对 |
+| Hook | Background & opportunity | Market, pain, competition, why now |
+| Context | What we already have | Team, tech, data, prior assets |
+| Proposal | Goals & scope | In/out of scope, milestones |
+| Evidence | Why us | Differentiation, moat |
+| Ask | Resources & risks | Support needed, top risks and mitigation |
 
 ```
-# {项目名} · 立项汇报
+# {Project} · Kickoff
 
-## 背景与机会
+## Background & opportunity
 
-{为什么现在做。市场机会、业务痛点、竞品动态，2-4 句。
+{Why now: market, pain, competition—2–4 sentences.
 
-注意：这部分是说服的起点，要让听者产生"确实该做了"的感觉。}
+This is the persuasion entry—create “we should do this.”}
 
-## 我们有什么
+## What we already have
 
-{团队 / 技术 / 数据 / 业务的已有积累，不是为了炫耀，而是建立信任。
+{Team, tech, data, business assets—not bragging, but trust.
 
-句式："我们已经有了 XX，所以做这事不是从零开始。"}
+Pattern: “We already have X, so this is not from zero.”}
 
-## 目标与范围
+## Goals & scope
 
-**做**：{具体的能力范围列表}
-**不做**：{明确的排除项，防 scope creep}
+**In scope**: {capabilities}
+**Out of scope**: {explicit exclusions—prevent scope creep}
 
-{预期里程碑和时间节点}
+{Milestones and timeline}
 
-## 为什么是我们
+## Why us
 
-{与市面方案的核心差异。讲壁垒：别人为什么做不了，或做了也不如我们。}
+{Core difference vs alternatives. Moat: why others can’t or won’t match.}
 
-## 资源需求与风险
+## Resources & risks
 
-{需要什么支持（人 / 钱 / 跨团队协同）
-最大风险是什么、应对方案是什么}
+{People / budget / cross-team needs
+Top risk and mitigation}
 ```
 
-### 阶段汇报
+### Status update
 
-**说服目标**：让领导和干系人相信项目在正轨上，值得继续投入。
+**Goal:** Convince leaders and stakeholders the work is on track and worth continued investment.
 
-| 段落 | 模板章节 | 侧重 |
+| Part | Section | Focus |
 |---|---|---|
-| Hook | 一句话总结 | 本期最重要的 1-2 个事实 |
-| Context | 本期背景 | 本期定位、对比上期变化 |
-| Proposal | 关键进展 | 按 milestone 或模块列出完成事项 |
-| Evidence | 关键数据 | 进度 / 质量 / 效率的量化指标 |
-| Ask | 风险与决策 | 需要领导做什么决策、协调什么资源 |
+| Hook | One-line summary | 1–2 most important facts this period |
+| Context | Period context | Position vs last period |
+| Proposal | Key progress | By milestone or module |
+| Evidence | Key metrics | Progress, quality, efficiency |
+| Ask | Risks & decisions | Decisions and coordination needed |
 
 ```
-# {项目名} · 阶段汇报
+# {Project} · Status update
 
-## 一句话总结
+## One-line summary
 
-{最重要的 1-2 个事实，让听者 10 秒掌握核心}
+{1–2 facts; audience grasps core in 10 seconds}
 
-## 关键进展
+## Key progress
 
-{按 milestone 或模块列出完成事项和关键数据}
+{Completed items and metrics by milestone or module}
 
-## 风险与应对
+## Risks & response
 
-每条写作公式：{现象} → {根因} → {应对方案} → {当前状态}
+Formula per item: {symptom} → {root cause} → {mitigation} → {status}
 
-需要决策的单独列出，不给问答题：
-❌ "XX 依赖还不确定，请领导关注"
-✅ "XX 依赖的排期有两周偏差，方案 A（加人赶工）和方案 B（调后里程碑），建议选 A，需要协调 YY 团队支援"
+Decisions: options + recommendation—no open homework:
+❌ "Dependency X uncertain—please advise"
+✅ "Dependency X slipped 2 weeks. Option A (add people) vs B (move milestone). Recommend A; need Team Y support."
 
-## 下一阶段计划
+## Next phase
 
-| 事项 | 预期时间 | 依赖条件 | 风险预判 |
+| Item | ETA | Dependencies | Risk |
 |---|---|---|---|
 ```
 
-### 结项 / 年度总结
+### Wrap-up / annual review
 
-**说服目标**：让领导和组织认可交付的价值、沉淀的资产。
+**Goal:** Show delivered value and assets retained.
 
-| 段落 | 模板章节 | 侧重 |
+| Part | Section | Focus |
 |---|---|---|
-| Hook | 目标达成总览 | 总体判断：做成没做成 |
-| Context | 原始目标回顾 | 当时承诺了什么 |
-| Evidence | 量化成果 | 数据说话 |
-| Proposal | 经验与资产 | 留下了什么 |
-| Ask | 下期规划或交接 | 接下来怎么办 |
+| Hook | Goal attainment overview | Did we succeed overall? |
+| Context | Original goals | What we committed to |
+| Evidence | Quantified outcomes | Data-led |
+| Proposal | Lessons & assets | What remains |
+| Ask | Next phase or handoff | What happens next |
 
 ```
-# {项目名} · 结项汇报 / {年份}年度总结
+# {Project} · Wrap-up / {Year} annual review
 
-## 目标达成
+## Goal attainment
 
-| 目标 | 目标值 | 实际值 | 达成率 | 原因 |
+| Goal | Target | Actual | % | Notes |
 |---|---|---|---|---|
 
-未达标的附根因分析和改进方向，主动说比被问到好。
+Underperformance: root cause and improvement—say it before they ask.
 
-## 核心产出
+## Core deliverables
 
-3-5 项，每项都要有：{做了什么} + {量化结果} + {业务影响}。
+3–5 items, each: {what} + {metric} + {business impact}
 
-## 经验沉淀
+## Lessons
 
-- **做对了什么**：可复用的方法 / 架构 / 流程
-- **踩了什么坑**：根因 + 后续如何避免
-- **留下的资产**：代码 / 数据 / 文档 / 团队能力
+- **What worked**: reusable methods / architecture / process
+- **What failed**: root cause + prevention
+- **Assets left**: code / data / docs / team capability
 
-## 下期规划
+## Next
 
-有下期 → 方向、目标、关键结果、资源需求
-无下期 → 团队 / 系统如何平稳交接，不留裸奔状态
+If continuing → direction, goals, key results, resources
+If ending → handoff so nothing is left unsupported
 ```
 
-### 路演
+### Investor pitch
 
-**说服目标**：让投资人或合作伙伴在短时间内对你产生兴趣，愿意约下一次深聊。
+**Goal:** Spark interest for a deeper conversation.
 
-| 段落 | 模板章节 | 侧重 |
+| Part | Section | Focus |
 |---|---|---|
-| Hook | 一句话 | 你们是做什么的（电梯演讲） |
-| Context | 市场机会 | 市场规模、痛点、为什么是现在 |
-| Proposal | 产品方案 | 怎么解决、核心功能、当前阶段 |
-| Evidence | 壁垒与 traction | 技术壁垒、数据、用户增长、团队背景 |
-| Ask | 融资计划 / 合作方式 | 需要多少、用来做什么、预期里程碑 |
+| Hook | One-liner | Elevator pitch |
+| Context | Market opportunity | Size, pain, why now |
+| Proposal | Product | Solution, core features, stage |
+| Evidence | Moat & traction | Tech, data, growth, team |
+| Ask | Funding / partnership | Amount, use, milestones |
 
 ```
-# {项目名} · 路演
+# {Project} · Pitch
 
-## 一句话
+## One-liner
 
-{电梯演讲：我们在做什么、为谁做、带来什么价值}
+{What we do, for whom, what value}
 
-## 市场机会
+## Market opportunity
 
-{市场规模、目标用户画像、当前痛点、为什么现在是入场时机}
+{Size, persona, pain, why now}
 
-## 产品方案
+## Product
 
-{怎么解决痛点、核心功能、架构示意（可简）、当前迭代阶段}
+{How we solve, core features, architecture (brief), stage}
 
-## 壁垒与 traction
+## Moat & traction
 
-**壁垒**：{技术 / 数据 / 网络效应 / 团队——别人为什么做不了}
-**数据**：{用户量 / 增长率 / 留存 / 收入等关键指标}
-**团队**：{核心成员背景、为什么这个团队能做}
+**Moat**: {tech / data / network / team—why others can’t}
+**Metrics**: {users, growth, retention, revenue}
+**Team**: {why this team can execute}
 
-## 融资计划
+## Funding ask
 
-{需要多少钱、用在哪、预期 milestone、下一轮目标}
+{Amount, use of funds, milestones, next round goal}
 ```
 
-### 方案推销
+### Solution selling
 
-**说服目标**：让客户决策层相信你的方案是最优解。
+**Goal:** Convince customer executives your solution is the best fit.
 
-| 段落 | 模板章节 | 侧重 |
+| Part | Section | Focus |
 |---|---|---|
-| Hook | 痛点对齐 | 我理解你们的困扰是什么 |
-| Context | 现状分析 | 当前方案的问题或空白 |
-| Proposal | 解决方案 | 我们的方案怎么解决 |
-| Evidence | 案例与数据 | 谁用过了、效果如何 |
-| Ask | 合作方式 | 怎么开始、需要什么支持 |
+| Hook | Pain alignment | Their problem in their words |
+| Context | Current state | Gaps in status quo |
+| Proposal | Solution | How we solve |
+| Evidence | Cases & data | Proof |
+| Ask | Partnership | How to start |
 
 ```
-# {项目名} · 方案建议
+# {Project} · Proposal
 
-## 痛点对齐
+## Pain alignment
 
-{用客户的语言描述他们的问题。说的越准，信任建立越快。}
+{Customer language for the problem—accuracy builds trust fast}
 
-## 现状分析
+## Current state
 
-{当前方案为什么不够好：功能缺口 / 成本 / 效率 / 风险}
+{Why status quo fails: features, cost, efficiency, risk}
 
-## 解决方案
+## Our solution
 
-{我们的方案怎么解决问题，核心能力和差异化优势}
+{How we solve; capabilities and differentiation}
 
-## 案例与数据
+## Proof
 
-{同行业 / 同场景的成功案例，量化效果}
-{如果没有案例，用 POC 计划或 demo 路线图代替}
+{Same-industry cases with metrics}
+{If no case: POC plan or demo roadmap}
 
-## 合作建议
+## Partnership
 
-{建议的合作模式、实施路径、预期 timeline、需要客户配合什么}
+{Engagement model, timeline, what we need from them}
 ```
 
 ---
 
-## 写作准则
+## Writing rules
 
-### 1. 先说对方关心的，再讲你想讲的
-❌ 先花 5 分钟讲团队多努力、技术多牛
-✅ 第一句话就回答"对方为什么要在意"
+### 1. Their concerns first, your story second
+❌ Five minutes on how hard the team worked and how clever the architecture is  
+✅ First sentence answers “why should I care?”
 
-### 2. 风险要有判断
-❌ "服务器偶发超时，请领导关注"
-✅ "连接池耗尽导致，扩容执行中，预计明天恢复"
+### 2. Risks need judgment
+❌ "Servers occasionally timeout—please monitor"  
+✅ "Connection pool exhaustion; scaling in progress; expected recovery tomorrow"
 
-### 3. 横向对齐先肯定对方
-❌ "我们填补了空白"
-✅ "XX 团队已有成熟的 YY 体系，我们补充了 ZZ 维度"
+### 3. Acknowledge peer teams first
+❌ "We filled a gap no one else addressed"  
+✅ "Team X has a mature Y; we extend with Z"
 
-### 4. 数据给出处和口径
-❌ "转化率提升 20%"
-✅ "转化率 +20%（6 月 vs 5 月，同账号池）"
+### 4. Metrics need source and definition
+❌ "Conversion improved 20%"  
+✅ "Conversion +20% (June vs May, same account pool)"
 
-### 5. 坏消息前置
-❌ 先写成果再埋一句"但 XX 延期了"
-✅ 第一条就写风险，然后是成果
+### 5. Bad news early when it matters
+❌ Wins first, then buried "but we slipped"  
+✅ Lead with material risks, then progress
 
-### 6. 不给对方做问答题
-❌ "下一步计划：继续推进"
-✅ "XX 联调，预期周三提测，风险在 YY 依赖——已对齐"
-
----
-
-## 工作流
-
-```
-步骤 1 — 加载记忆
-  读取上级背景、业务定位、格式规范。
-  缺失 → 让用户补充。
-
-步骤 2 — 确定场景与听众
-  让用户选择汇报类型（立项 / 阶段 / 结项·年度 / 路演 / 方案推销）。
-  追问听众背景：
-  □ 听众的角色和层级？
-  □ 他们对这个项目的了解程度？
-  □ 他们的核心关切是什么（技术 / 业务 / 成本 / 时间）？
-
-步骤 3 — 材料追问
-  根据类型逐项检查材料完整性，缺少的向用户提问：
-
-  立项汇报：
-  □ 项目背景 / 市场分析文档
-  □ 竞品对标情况
-  □ 团队能力说明
-  □ 目标和关键指标
-  □ 资源需求和预算
-  □ 时间节点
-
-  阶段汇报：
-  □ 本期完成事项
-  □ 关键数据（进度 / 质量 / 效率）
-  □ 风险清单（含判断和应对）
-  □ 下阶段计划
-  □ 需要领导决策的事项
-
-  结项 / 年度总结：
-  □ 原始目标列表
-  □ 量化成果数据
-  □ 经验教训
-  □ 下期规划或交接方案
-
-  路演：
-  □ 市场数据和行业报告
-  □ 产品 demo 或 MVP 状态
-  □ 竞争格局分析
-  □ 团队介绍
-  □ 财务数据和预测
-  □ 融资需求和用途
-
-  方案推销：
-  □ 客户背景和痛点
-  □ 竞品方案分析
-  □ 我们的方案和能力
-  □ 案例或 POC 计划
-  □ 报价或合作模式
-
-  如果用户说"你都知道了，直接写"：
-  → 从记忆和历史对话中提取已有信息
-  → 开头标注"基于现有信息，可能遗漏 XX"
-
-步骤 4 — 按模板撰写初稿
-  根据类型选择对应模板，遵守写作准则。
-  五段式框架的每个段落写完后，问自己：
-  "这一段回答的是对方关心的问题吗？"
-
-步骤 5 — 终稿检查
-  □ 开头 10 秒是否让对方产生"这跟我有关"的感觉？
-  □ 每个数字有出处和口径？
-  □ 每条风险有根因 + 应对？
-  □ 有没有"需要关注"这类无判断表述？
-  □ 横向评价是否先肯定对方？
-
-步骤 6 — 用户确认
-  呈现 → "哪些需要调整？"
-  格式问题 → 追加到格式规范记忆
-```
+### 6. No homework for the audience
+❌ "Next: keep pushing forward"  
+✅ "Integration Wed; risk is dependency Y—owner aligned"
 
 ---
 
-## 跨场景迁移要点
+## Workflow
 
-从一个场景切换到另一个场景时：
+```
+Step 1 — Load memory
+  Read leader context, business positioning, format prefs.
+  Missing → ask user to supply.
 
-| 迁移方向 | 要改什么 | 要保留什么 |
+Step 2 — Scenario & audience
+  User picks type (kickoff / status / wrap-up·annual / pitch / solution selling).
+  Probe audience:
+  □ Role and level?
+  □ How much do they already know?
+  □ Top concerns (tech / business / cost / time)?
+
+Step 3 — Material intake
+  Check completeness by type; ask for gaps:
+
+  Kickoff:
+  □ Background / market analysis
+  □ Competitive landscape
+  □ Team capabilities
+  □ Goals and KPIs
+  □ Resources and budget
+  □ Timeline
+
+  Status:
+  □ Completed work this period
+  □ Key metrics (progress / quality / efficiency)
+  □ Risk list with judgment and mitigation
+  □ Next-phase plan
+  □ Decisions needed from leadership
+
+  Wrap-up / annual:
+  □ Original goals
+  □ Quantified outcomes
+  □ Lessons learned
+  □ Next plan or handoff
+
+  Pitch:
+  □ Market data and reports
+  □ Product demo or MVP status
+  □ Competition
+  □ Team intro
+  □ Financials and forecast
+  □ Funding ask and use of funds
+
+  Solution selling:
+  □ Customer background and pain
+  □ Alternative solutions
+  □ Our solution and capabilities
+  □ Cases or POC plan
+  □ Pricing or engagement model
+
+  If user says "you know everything—just write":
+  → Pull from memory and prior context
+  → Open with "Based on available info; may be missing XX"
+
+Step 4 — Draft to template
+  Pick template; apply writing rules.
+  After each part, ask: "Does this answer what they care about?"
+
+Step 5 — Final check
+  □ First 10 seconds feel relevant?
+  □ Every number sourced and defined?
+  □ Every risk has root cause + response?
+  □ No vague "needs attention" without judgment?
+  □ Cross-team mentions acknowledge others first?
+
+Step 6 — User confirmation
+  Present → "What should we adjust?"
+  Format issues → add to format memory
+```
+
+---
+
+## Cross-scenario migration
+
+| From → To | Change | Keep |
 |---|---|---|
-| 立项 → 路演 | Hook 从业务痛点改市场机会，Evidence 从技术壁垒改 market traction | 五段结构、Risk 预判逻辑 |
-| 阶段汇报 → 立项（下一期） | 阶段进展变背景 Context，风险积累变 Risk 预判 | 数据口径、团队能力描述 |
-| 结项 → 案例沉淀 | 内部复盘数据脱敏、强调客户价值而非过程 | 量化方法、检验标准 |
-| 方案推销 → 立项 | 客户痛点变市场机会，案例变证据 | 说服结构、风险预判 |
+| Kickoff → Pitch | Hook: business pain → market opportunity; Evidence: tech moat → traction | 5-part structure, risk logic |
+| Status → Kickoff (next phase) | Progress becomes Context; accumulated risks feed Risk | Metric definitions, team narrative |
+| Wrap-up → Case study | De-identify internals; emphasize customer value | Quant methods, acceptance criteria |
+| Solution selling → Kickoff | Customer pain → market opportunity; cases → evidence | Structure, risk foresight |

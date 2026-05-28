@@ -1,11 +1,11 @@
 ---
-description: Install pitchcraft skill for structured persuasion and executive reporting
+description: 安装 pitchcraft skill（结构化说服与汇报）
 allowed-tools: Bash, Read, Edit
 ---
 
-# Install pitchcraft
+# pitchcraft 安装
 
-## Step 1: Detect install location
+## Step 1: 检测安装位置
 
 **macOS / Linux**:
 ```bash
@@ -14,9 +14,9 @@ SKILL_DIR="$CLAUDE_DIR/skills/pitchcraft"
 if [ -d "$SKILL_DIR" ]; then echo "ALREADY_INSTALLED"; else echo "NEED_INSTALL"; fi
 ```
 
-## Step 2: Install SKILL file
+## Step 2: 安装 SKILL 文件
 
-Installs English `SKILL.md` by default. For Chinese, copy `SKILL.zh-CN.md` to `SKILL.md` instead.
+默认安装英文 `SKILL.md`。若需中文，将 `SKILL.zh-CN.md` 复制为 `SKILL.md`。
 
 **macOS / Linux**:
 ```bash
@@ -24,7 +24,7 @@ CLAUDE_DIR="${CLAUDE_CONFIG_DIR:-$HOME/.claude}"
 REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 mkdir -p "$CLAUDE_DIR/skills/pitchcraft"
 cp "$REPO_DIR/.claude/skills/pitchcraft/SKILL.md" "$CLAUDE_DIR/skills/pitchcraft/SKILL.md"
-# Chinese: cp "$REPO_DIR/.claude/skills/pitchcraft/SKILL.zh-CN.md" "$CLAUDE_DIR/skills/pitchcraft/SKILL.md"
+# 中文：cp "$REPO_DIR/.claude/skills/pitchcraft/SKILL.zh-CN.md" "$CLAUDE_DIR/skills/pitchcraft/SKILL.md"
 echo "pitchcraft installed at $CLAUDE_DIR/skills/pitchcraft/"
 ```
 
@@ -37,25 +37,20 @@ Copy-Item (Join-Path $repoDir ".claude\skills\pitchcraft\SKILL.md") (Join-Path $
 Write-Output "pitchcraft installed at $(Join-Path $claudeDir 'skills\pitchcraft\')"
 ```
 
-## Step 3: Verify
+## Step 3: 验证安装
+
+确认文件存在：
 
 ```bash
 ls -la "$CLAUDE_DIR/skills/pitchcraft/SKILL.md"
 ```
 
-## Step 4: Notify user
+## Step 4: 通知用户
 
-Installation complete. Trigger phrases:
-
-**English**
-
-- **status update** / **briefing** — cross-level briefing
-- **project kickoff** — approve and fund
-- **milestone review** — sync progress
-- **wrap-up** / **retrospective** — outcomes and assets
-- **pitch** / **fundraising** — investors or partners
-- **solution selling** — customer stakeholders
-
-**中文**（若安装了 `SKILL.zh-CN.md`）
-
-- **汇报** / **简报** · **立项汇报** · **阶段汇报** · **结项总结** · **路演** · **方案推销**
+告诉用户已安装完成，使用触发词：
+- **「汇报」或「简报」** — 跨级汇报
+- **「立项汇报」** — 说服决策层批准启动
+- **「阶段汇报」** — 同步进展
+- **「结项总结」** — 复盘目标达成
+- **「路演」** — 向投资人展示
+- **「方案推销」** — 向客户推荐解决方案

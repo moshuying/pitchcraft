@@ -1,6 +1,6 @@
 {
   "name": "pitchcraft",
-  "description": "结构化说服框架 · 让领导理解你的价值、相信你的判断",
+  "description": "Structured persuasion framework — help leaders understand your impact and trust your judgment",
   "version": "1.0.0",
   "author": {
     "name": "jiujiangliu",
@@ -12,5 +12,5 @@
   "homepage": "https://github.com/moshuying/pitchcraft",
   "repository": "https://github.com/moshuying/pitchcraft",
   "license": "Apache-2.0",
-  "keywords": ["pitch", "说服", "汇报", "presentation", "communication"]
+  "keywords": ["pitch", "persuasion", "presentation", "communication", "executive-briefing", "status-update"]
 }
