@@ -35,6 +35,15 @@ pitchcraft turns that from a gift into a **repeatable workflow**:
 | Memory | None | Leader context, business positioning, format prefs (when configured) |
 
 ---
+## Star History
+
+<a href="https://www.star-history.com/?repos=moshuying%2Fpitchcraft&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=moshuying/pitchcraft&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=moshuying/pitchcraft&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=moshuying/pitchcraft&type=date&legend=top-left" />
+ </picture>
+</a>
 
 ## Framework: 5-part persuasion structure
 
