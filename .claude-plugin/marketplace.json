@@ -5,16 +5,16 @@
     "email": ""
   },
   "metadata": {
-    "description": "Structured persuasion framework — help leaders understand your impact and trust your judgment",
+    "description": "Structured persuasion for tech leads, PMs, founders—kickoff, status, wrap-up, pitch, solution selling on a 5-part framework",
     "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "pitchcraft",
       "source": "./",
-      "description": "5-part persuasion framework: project kickoff, status update, wrap-up, investor pitch, solution selling. AI prompts for materials and audience before drafting.",
+      "description": "Structured persuasion for tech leads, PMs, founders—five scenarios on Hook→Context→Proposal→Evidence→Ask with AI intake and checklist",
       "category": "workflow",
-      "tags": ["pitch", "persuasion", "presentation", "communication", "executive-briefing"]
+      "tags": ["claude-skills", "agent-skills", "pitch", "persuasion", "presentation", "communication", "executive-briefing", "status-update"]
     }
   ]
 }

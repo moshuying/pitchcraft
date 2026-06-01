@@ -73,6 +73,12 @@ Install pitchcraft for me: https://github.com/moshuying/pitchcraft
 
 重启后输入触发词即可。需要中文 Skill 时，将 `.claude/skills/pitchcraft/SKILL.zh-CN.md` 复制为 `SKILL.md`（见下方「多语言」）。
 
+### SkillsMP / GitHub 收录
+
+[SkillsMP](https://skillsmp.com) 会自动抓取带根目录 `SKILL.md` 且 frontmatter 含 `name`、`description` 的仓库。本仓库根目录 `SKILL.md` 与 `.claude/skills/pitchcraft/SKILL.md` 保持同步，兼顾收录与插件安装。
+
+在 GitHub：**Settings → General → Topics** → 添加 `claude-skills` 或 `claude-code-skill`（每日同步）。
+
 ### Cursor / Codex / 其他 AI
 
 | 工具 | 方式 |
@@ -123,9 +129,10 @@ pitchcraft 不是一个丢给 AI 就能自动写好汇报的"魔法棒"。它的
 
 ```
 pitchcraft/
+├── SKILL.md                      # 根目录 skill（SkillsMP 收录）
 ├── .claude/
 │   └── skills/pitchcraft/
-│       ├── SKILL.md              # English (default)
+│       ├── SKILL.md              # English（插件安装源）
 │       └── SKILL.zh-CN.md        # 简体中文
 ├── .claude-plugin/
 │   ├── marketplace.json

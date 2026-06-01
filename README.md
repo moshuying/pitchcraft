@@ -4,7 +4,7 @@
 
 ![License: Apache License 2.0](https://img.shields.io/badge/License-apache2.0-blue.svg)
 
-A claude-skill help your work, **Your work deserves to be seen.**
+A Claude Agent Skill for structured persuasion—**your work deserves to be seen.**
 
 Writing good code is a skill. Getting leaders to understand what you shipped, trust your judgment, and act on your recommendations is a bigger one.
 
@@ -80,6 +80,12 @@ Install pitchcraft for me: https://github.com/moshuying/pitchcraft
 
 Restart, then use a trigger phrase below. The plugin installs the English `SKILL.md` by default. For Chinese, copy `SKILL.zh-CN.md` over `SKILL.md` (see **Localization**).
 
+### SkillsMP / GitHub discovery
+
+[SkillsMP](https://skillsmp.com) auto-indexes repos with a root `SKILL.md` and valid frontmatter (`name`, `description`). This repo keeps root `SKILL.md` in sync with `.claude/skills/pitchcraft/SKILL.md` for crawlers and the Claude Code plugin.
+
+On GitHub: **Settings → General → Topics** → add `claude-skills` or `claude-code-skill` (daily sync).
+
 ### Cursor / Codex / other AI tools
 
 | Tool | How |
@@ -136,9 +142,10 @@ You focus on substance; structure and checks are handled by the framework and AI
 
 ```
 pitchcraft/
+├── SKILL.md                      # Root skill (SkillsMP / lazy-load index)
 ├── .claude/
 │   └── skills/pitchcraft/
-│       ├── SKILL.md              # English (default)
+│       ├── SKILL.md              # English (plugin install source)
 │       └── SKILL.zh-CN.md
 ├── .claude-plugin/
 │   ├── marketplace.json
