@@ -26,13 +26,13 @@ pitchcraft 就是把这件事从"天赋"变成"流程"：
 
 ## 和市面上"AI 写周报"工具的区别
 
-| | 通用 AI 写周报 | pitchcraft |
-|---|---|---|
-| 场景 | 周报、月报流水账 | 立项汇报、阶段复盘、路演、方案推销 |
-| 输出目标 | 记录工作 | 说服对方、获得支持 |
-| AI 角色 | 填空机器 | 主动追问：缺什么材料、听众是谁、关注什么 |
-| 核心理念 | "做了什么" | "对方为什么要在意" |
-| 记忆系统 | 无 | 记住领导背景、业务定位、格式偏好 |
+|          | 通用 AI 写周报   | pitchcraft                               |
+| -------- | ---------------- | ---------------------------------------- |
+| 场景     | 周报、月报流水账 | 立项汇报、阶段复盘、路演、方案推销       |
+| 输出目标 | 记录工作         | 说服对方、获得支持                       |
+| AI 角色  | 填空机器         | 主动追问：缺什么材料、听众是谁、关注什么 |
+| 核心理念 | "做了什么"       | "对方为什么要在意"                       |
+| 记忆系统 | 无               | 记住领导背景、业务定位、格式偏好         |
 
 ---
 
@@ -46,17 +46,32 @@ Hook（钩子）→ Context（背景）→ Proposal（方案）→ Evidence（�
 
 每种汇报类型是这个框架的一个实例：
 
-| 场景 | Hook 主打 | Evidence 主打 | Ask 方向 |
-|---|---|---|---|
-| 立项汇报 | 业务痛点 / 市场机会 | 壁垒（为什么是我们） | 要资源、要批准 |
-| 阶段汇报 | 本期最快结论 | 关键数据 | 要决策、要协调 |
-| 结项 / 年度 | 目标达成总览 | 量化成果 | 下期或交接 |
-| 路演 | 市场空间 | 壁垒 + traction | 要投资、要合作 |
-| 方案推销 | 客户痛点对齐 | 案例 + 数据 | 要订单 |
+| 场景        | Hook 主打           | Evidence 主打        | Ask 方向       |
+| ----------- | ------------------- | -------------------- | -------------- |
+| 立项汇报    | 业务痛点 / 市场机会 | 壁垒（为什么是我们） | 要资源、要批准 |
+| 阶段汇报    | 本期最快结论        | 关键数据             | 要决策、要协调 |
+| 结项 / 年度 | 目标达成总览        | 量化成果             | 下期或交接     |
+| 路演        | 市场空间            | 壁垒 + traction      | 要投资、要合作 |
+| 方案推销    | 客户痛点对齐        | 案例 + 数据          | 要订单         |
 
 ---
 
 ## 安装
+
+### npm / npx
+
+```bash
+# 全局（~/.claude/skills/pitchcraft/）
+npm install -g pitchcraft
+```
+
+或使用 [Vercel skills CLI](https://github.com/vercel-labs/skills)：
+
+```bash
+npx skills add moshuying/pitchcraft -a claude-code -a cursor -y
+```
+
+发布到 npm：`npm publish`（若包名 `pitchcraft` 已被占用，可改为 `@moshuying/pitchcraft`）。
 
 ### Claude Code
 
@@ -81,11 +96,11 @@ Install pitchcraft for me: https://github.com/moshuying/pitchcraft
 
 ### Cursor / Codex / 其他 AI
 
-| 工具 | 方式 |
-|---|---|
-| Cursor | 将 `prompts/universal.zh-CN.md` 或 `prompts/universal.md` 粘贴到 Rules for AI |
-| Codex CLI | 同上，设为系统指令 |
-| ChatGPT / Claude 网页版 | 直接粘贴对应语言的 prompt 文件 |
+| 工具                    | 方式                                                                          |
+| ----------------------- | ----------------------------------------------------------------------------- |
+| Cursor                  | 将 `prompts/universal.zh-CN.md` 或 `prompts/universal.md` 粘贴到 Rules for AI |
+| Codex CLI               | 同上，设为系统指令                                                            |
+| ChatGPT / Claude 网页版 | 直接粘贴对应语言的 prompt 文件                                                |
 
 ### 触发词
 
@@ -114,14 +129,14 @@ pitchcraft 不是一个丢给 AI 就能自动写好汇报的"魔法棒"。它的
 
 ## 多语言
 
-| 文件 | 语言 |
-|---|---|
-| `README.md` | English（默认） |
-| `README.zh-CN.md` | 简体中文 |
-| `prompts/universal.md` | English |
-| `prompts/universal.zh-CN.md` | 简体中文 |
-| `.claude/skills/pitchcraft/SKILL.md` | English（插件默认安装） |
-| `.claude/skills/pitchcraft/SKILL.zh-CN.md` | 简体中文 |
+| 文件                                       | 语言                    |
+| ------------------------------------------ | ----------------------- |
+| `README.md`                                | English（默认）         |
+| `README.zh-CN.md`                          | 简体中文                |
+| `prompts/universal.md`                     | English                 |
+| `prompts/universal.zh-CN.md`               | 简体中文                |
+| `.claude/skills/pitchcraft/SKILL.md`       | English（插件默认安装） |
+| `.claude/skills/pitchcraft/SKILL.zh-CN.md` | 简体中文                |
 
 ---
 
@@ -130,6 +145,8 @@ pitchcraft 不是一个丢给 AI 就能自动写好汇报的"魔法棒"。它的
 ```
 pitchcraft/
 ├── SKILL.md                      # 根目录 skill（SkillsMP 收录）
+├── package.json                  # npm 安装入口
+├── scripts/install.js
 ├── .claude/
 │   └── skills/pitchcraft/
 │       ├── SKILL.md              # English（插件安装源）

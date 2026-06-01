@@ -18,7 +18,7 @@ pitchcraft is a **structured persuasion framework** for project kickoffs, status
 
 ## Why this project exists
 
-In the AI era, execution is commoditized; persuasion compounds. AI can write code, but explaining *why now*, *why us*, and *why this matters* to decision-makers still needs you—AI can make you better at it.
+In the AI era, execution is commoditized; persuasion compounds. AI can write code, but explaining _why now_, _why us_, and _why this matters_ to decision-makers still needs you—AI can make you better at it.
 
 pitchcraft turns that from a gift into a **repeatable workflow**:
 
@@ -26,15 +26,16 @@ pitchcraft turns that from a gift into a **repeatable workflow**:
 
 ## How it differs from “AI weekly report” tools
 
-| | Generic AI reports | pitchcraft |
-|---|---|---|
-| Scenarios | Weekly/monthly activity logs | Kickoff, status, wrap-up, pitch, solution selling |
-| Goal | Record work | Persuade and secure support |
-| AI role | Fill-in-the-blank | Ask what’s missing, who’s in the room, what they care about |
-| Core idea | “What we did” | “Why they should care” |
-| Memory | None | Leader context, business positioning, format prefs (when configured) |
+|           | Generic AI reports           | pitchcraft                                                           |
+| --------- | ---------------------------- | -------------------------------------------------------------------- |
+| Scenarios | Weekly/monthly activity logs | Kickoff, status, wrap-up, pitch, solution selling                    |
+| Goal      | Record work                  | Persuade and secure support                                          |
+| AI role   | Fill-in-the-blank            | Ask what’s missing, who’s in the room, what they care about          |
+| Core idea | “What we did”                | “Why they should care”                                               |
+| Memory    | None                         | Leader context, business positioning, format prefs (when configured) |
 
 ---
+
 ## Star History
 
 <a href="https://www.star-history.com/?repos=moshuying%2Fpitchcraft&type=date&legend=top-left">
@@ -53,17 +54,32 @@ Every scenario shares the same backbone; section emphasis changes:
 Hook → Context → Proposal → Evidence → Ask
 ```
 
-| Scenario | Hook focus | Evidence focus | Ask |
-|---|---|---|---|
-| Project kickoff | Pain / opportunity | Why us (moat) | Resources, approval |
-| Status update | Headline takeaway | Key metrics | Decisions, coordination |
-| Wrap-up / annual | Goal attainment | Quantified outcomes | Next phase or handoff |
-| Investor pitch | Market space | Moat + traction | Investment, partnership |
-| Solution selling | Customer pain alignment | Cases + data | Deal, next steps |
+| Scenario         | Hook focus              | Evidence focus      | Ask                     |
+| ---------------- | ----------------------- | ------------------- | ----------------------- |
+| Project kickoff  | Pain / opportunity      | Why us (moat)       | Resources, approval     |
+| Status update    | Headline takeaway       | Key metrics         | Decisions, coordination |
+| Wrap-up / annual | Goal attainment         | Quantified outcomes | Next phase or handoff   |
+| Investor pitch   | Market space            | Moat + traction     | Investment, partnership |
+| Solution selling | Customer pain alignment | Cases + data        | Deal, next steps        |
 
 ---
 
 ## Install
+
+### npm / npx
+
+```bash
+# Global (~/.claude/skills/pitchcraft/)
+npm install -g pitchcraft
+```
+
+Also works with the [Vercel skills CLI](https://github.com/vercel-labs/skills):
+
+```bash
+npx skills add moshuying/pitchcraft -a claude-code -a cursor -y
+```
+
+Publish: `npm publish` (scoped: set `"name": "@moshuying/pitchcraft"` if `pitchcraft` is taken on npm).
 
 ### Claude Code
 
@@ -88,11 +104,11 @@ On GitHub: **Settings → General → Topics** → add `claude-skills` or `claud
 
 ### Cursor / Codex / other AI tools
 
-| Tool | How |
-|---|---|
-| Cursor | Paste `prompts/universal.md` (or `universal.zh-CN.md`) into Rules for AI |
-| Codex CLI | Same content as system instructions |
-| ChatGPT / Claude web | Paste the prompt file into the chat |
+| Tool                 | How                                                                      |
+| -------------------- | ------------------------------------------------------------------------ |
+| Cursor               | Paste `prompts/universal.md` (or `universal.zh-CN.md`) into Rules for AI |
+| Codex CLI            | Same content as system instructions                                      |
+| ChatGPT / Claude web | Paste the prompt file into the chat                                      |
 
 ### Trigger phrases
 
@@ -127,14 +143,14 @@ You focus on substance; structure and checks are handled by the framework and AI
 
 ## Localization
 
-| File | Language |
-|---|---|
-| `README.md` | English (default) |
-| `README.zh-CN.md` | 简体中文 |
-| `prompts/universal.md` | English |
-| `prompts/universal.zh-CN.md` | 简体中文 |
-| `.claude/skills/pitchcraft/SKILL.md` | English (plugin default) |
-| `.claude/skills/pitchcraft/SKILL.zh-CN.md` | 简体中文 |
+| File                                       | Language                 |
+| ------------------------------------------ | ------------------------ |
+| `README.md`                                | English (default)        |
+| `README.zh-CN.md`                          | 简体中文                 |
+| `prompts/universal.md`                     | English                  |
+| `prompts/universal.zh-CN.md`               | 简体中文                 |
+| `.claude/skills/pitchcraft/SKILL.md`       | English (plugin default) |
+| `.claude/skills/pitchcraft/SKILL.zh-CN.md` | 简体中文                 |
 
 ---
 
@@ -143,6 +159,8 @@ You focus on substance; structure and checks are handled by the framework and AI
 ```
 pitchcraft/
 ├── SKILL.md                      # Root skill (SkillsMP / lazy-load index)
+├── package.json                  # npm install → .claude/skills/pitchcraft/
+├── scripts/install.js
 ├── .claude/
 │   └── skills/pitchcraft/
 │       ├── SKILL.md              # English (plugin install source)
@@ -168,13 +186,13 @@ pitchcraft/
 
 Ideas drawn from:
 
-- Malcolm Gladwell — *Blink*: first impressions; the first 10 seconds of a briefing matter.
-- Malcolm Gladwell — *The Tipping Point*: how ideas spread; persuasion lowers acceptance friction.
-- Chip Heath & Dan Heath — *Made to Stick*: SUCCESs (Simple, Unexpected, Concrete, Credible, Emotional, Stories).
-- Robert Cialdini — *Influence*: reciprocity, commitment, social proof, liking, authority, scarcity.
-- Nancy Duarte — *Resonate*: tension between “what is” and “what could be.”
-- Barbara Minto — *The Pyramid Principle*: conclusion first, MECE, hierarchy.
-- Anne-Laure Le Cunff — *Tiny Experiments*: decisions and progress under uncertainty.
+- Malcolm Gladwell — _Blink_: first impressions; the first 10 seconds of a briefing matter.
+- Malcolm Gladwell — _The Tipping Point_: how ideas spread; persuasion lowers acceptance friction.
+- Chip Heath & Dan Heath — _Made to Stick_: SUCCESs (Simple, Unexpected, Concrete, Credible, Emotional, Stories).
+- Robert Cialdini — _Influence_: reciprocity, commitment, social proof, liking, authority, scarcity.
+- Nancy Duarte — _Resonate_: tension between “what is” and “what could be.”
+- Barbara Minto — _The Pyramid Principle_: conclusion first, MECE, hierarchy.
+- Anne-Laure Le Cunff — _Tiny Experiments_: decisions and progress under uncertainty.
 
 ---
 
@@ -183,7 +201,7 @@ Ideas drawn from:
 ### Not
 
 - ❌ “AI writes my weekly status” — activity logs are out of scope
-- ❌ A repeat of *The Pyramid Principle* — concrete, executable templates, not principles only
+- ❌ A repeat of _The Pyramid Principle_ — concrete, executable templates, not principles only
 - ❌ Flattery or scripts — the goal is accurate understanding of your work
 
 ### Is
