@@ -20,8 +20,11 @@
   ],
   "files": [
     "SKILL.md",
+    ".claude/skills/pitchcraft/SKILL.md",
     ".claude/skills/pitchcraft/SKILL.zh-CN.md",
-    "prompts",
+    ".claude-plugin/",
+    "commands/",
+    "prompts/",
     "scripts/install.js"
   ],
   "bin": {
