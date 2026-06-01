@@ -4,7 +4,7 @@
 
 ![License: Apache License 2.0](https://img.shields.io/badge/License-apache2.0-blue.svg)
 
-**Your work deserves to be seen.**
+A claude-skill help your work, **Your work deserves to be seen.**
 
 Writing good code is a skill. Getting leaders to understand what you shipped, trust your judgment, and act on your recommendations is a bigger one.
 
